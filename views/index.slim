@@ -1,0 +1,17 @@
+h1
+  a[href="/"] reverse markdown
+
+form[action="/" method="POST"]
+  .text-center
+    input.btn[type="submit" value="convert"]
+
+  .row
+    .col-md-6
+        textarea#source[name="source" placeholder="HTML"]
+          = @source
+    .col-md-6
+        textarea#target[name="target" placeholder="Markdown"]
+          = @target
+
+  .text-center
+    input.btn[type="submit" value="convert"]
